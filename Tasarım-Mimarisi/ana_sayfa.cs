@@ -7,25 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tasarım_Mimarisi
 {
     public partial class ana_sayfa : Form
     {
+        public string isim;
         public ana_sayfa()
         {
             InitializeComponent();
+            
         }
-
+        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
+        DataTable tablo = new DataTable();
+        
         private void cikis_btn_Click(object sender, EventArgs e)
         {
             Giris giris_say = new Giris();
             giris_say.Show();
-            ana_sayfa ana = new ana_sayfa();
-            ana.Hide();
+            
             this.Hide();
         }
-
+        private void listeleme()
+        {
+            baglanti.Open();
+            OleDbDataAdapter liste = new OleDbDataAdapter("select *from Hastalar", baglanti);
+            liste.Fill(tablo);
+            dataGridView1.DataSource = tablo;
+            baglanti.Close();
+        }
         private void yeni_btn_Click(object sender, EventArgs e)
         {
             ekle_hasta ekle = new ekle_hasta();
@@ -43,6 +54,9 @@ namespace Tasarım_Mimarisi
         private void diyet_btn_Click(object sender, EventArgs e)
         {
             diyet_ata diyet = new diyet_ata();
+            diyet.ad = dataGridView1.CurrentRow.Cells["Ad"].Value.ToString();
+            diyet.soyad= dataGridView1.CurrentRow.Cells["Soyad"].Value.ToString();
+            diyet.tc = dataGridView1.CurrentRow.Cells["TC"].Value.ToString();
             diyet.Show();
             this.Hide();
         }
@@ -62,6 +76,13 @@ namespace Tasarım_Mimarisi
         private void giriscks_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ana_sayfa_Load(object sender, EventArgs e)
+        {
+           
+            label9.Text = isim;
+            listeleme();
         }
     }
 }

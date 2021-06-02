@@ -14,6 +14,7 @@ namespace Tasarım_Mimarisi
     public partial class Giris : Form
     {
         bool giris_yapildi = false;
+        
         public Giris()
         {
             InitializeComponent();
@@ -38,6 +39,7 @@ namespace Tasarım_Mimarisi
                 {
                     giris_yapildi = true;
                     ana_sayfa ana = new ana_sayfa();
+                    ana.isim = oku["Ad"].ToString();
                     ana.Show();
                     this.Hide();
                 }

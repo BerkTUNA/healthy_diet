@@ -31,7 +31,7 @@ namespace Tasarım_Mimarisi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ekle_diyet));
             this.ekle_btn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.diyet = new System.Windows.Forms.TextBox();
             this.anasycks = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -52,13 +52,13 @@ namespace Tasarım_Mimarisi
             this.ekle_btn.UseVisualStyleBackColor = false;
             this.ekle_btn.Click += new System.EventHandler(this.ekle_btn_Click);
             // 
-            // textBox1
+            // diyet
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(64, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 26);
-            this.textBox1.TabIndex = 4;
+            this.diyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.diyet.Location = new System.Drawing.Point(64, 58);
+            this.diyet.Name = "diyet";
+            this.diyet.Size = new System.Drawing.Size(117, 26);
+            this.diyet.TabIndex = 4;
             // 
             // anasycks
             // 
@@ -98,7 +98,7 @@ namespace Tasarım_Mimarisi
             this.Controls.Add(this.label1);
             this.Controls.Add(this.anasycks);
             this.Controls.Add(this.ekle_btn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.diyet);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ekle_diyet";
@@ -112,7 +112,7 @@ namespace Tasarım_Mimarisi
         #endregion
 
         private System.Windows.Forms.Button ekle_btn;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox diyet;
         private System.Windows.Forms.Button anasycks;
         private System.Windows.Forms.Label label1;
     }

@@ -91,6 +91,7 @@ namespace Tasarım_Mimarisi
             this.ekle_btn.Size = new System.Drawing.Size(58, 52);
             this.ekle_btn.TabIndex = 32;
             this.ekle_btn.UseVisualStyleBackColor = false;
+            this.ekle_btn.Click += new System.EventHandler(this.ekle_btn_Click);
             // 
             // label7
             // 
@@ -170,6 +171,7 @@ namespace Tasarım_Mimarisi
             this.Name = "ekle_hasta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Ekle";
+            this.Load += new System.EventHandler(this.ekle_hasta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
