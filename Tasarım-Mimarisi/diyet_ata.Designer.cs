@@ -38,7 +38,7 @@ namespace Tasarım_Mimarisi
             this.geri_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.anasycks = new System.Windows.Forms.Button();
+            this.diyetatacks = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ekle_btn
@@ -63,11 +63,13 @@ namespace Tasarım_Mimarisi
             this.combobox.Name = "combobox";
             this.combobox.Size = new System.Drawing.Size(171, 21);
             this.combobox.TabIndex = 40;
+            this.combobox.Click += new System.EventHandler(this.combobox_Click);
             // 
             // soyad_txt
             // 
             this.soyad_txt.Location = new System.Drawing.Point(140, 104);
             this.soyad_txt.Name = "soyad_txt";
+            this.soyad_txt.ReadOnly = true;
             this.soyad_txt.Size = new System.Drawing.Size(171, 20);
             this.soyad_txt.TabIndex = 38;
             // 
@@ -75,6 +77,7 @@ namespace Tasarım_Mimarisi
             // 
             this.tc_txt.Location = new System.Drawing.Point(140, 135);
             this.tc_txt.Name = "tc_txt";
+            this.tc_txt.ReadOnly = true;
             this.tc_txt.Size = new System.Drawing.Size(171, 20);
             this.tc_txt.TabIndex = 37;
             // 
@@ -82,6 +85,7 @@ namespace Tasarım_Mimarisi
             // 
             this.ad_txt.Location = new System.Drawing.Point(140, 73);
             this.ad_txt.Name = "ad_txt";
+            this.ad_txt.ReadOnly = true;
             this.ad_txt.Size = new System.Drawing.Size(171, 20);
             this.ad_txt.TabIndex = 36;
             // 
@@ -106,7 +110,7 @@ namespace Tasarım_Mimarisi
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 12F);
-            this.label7.ForeColor = System.Drawing.Color.CadetBlue;
+            this.label7.ForeColor = System.Drawing.Color.LightSkyBlue;
             this.label7.Location = new System.Drawing.Point(262, 213);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 20);
@@ -118,27 +122,27 @@ namespace Tasarım_Mimarisi
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 12F);
-            this.label1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label1.Location = new System.Drawing.Point(160, 204);
+            this.label1.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.label1.Location = new System.Drawing.Point(143, 213);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 20);
+            this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 45;
-            this.label1.Text = "Ekle";
+            this.label1.Text = "Diyeti Ekle";
             // 
-            // anasycks
+            // diyetatacks
             // 
-            this.anasycks.BackColor = System.Drawing.Color.Transparent;
-            this.anasycks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("anasycks.BackgroundImage")));
-            this.anasycks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.anasycks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anasycks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.anasycks.ForeColor = System.Drawing.Color.Transparent;
-            this.anasycks.Location = new System.Drawing.Point(322, 0);
-            this.anasycks.Name = "anasycks";
-            this.anasycks.Size = new System.Drawing.Size(40, 40);
-            this.anasycks.TabIndex = 46;
-            this.anasycks.UseVisualStyleBackColor = false;
-            this.anasycks.Click += new System.EventHandler(this.anasycks_Click);
+            this.diyetatacks.BackColor = System.Drawing.Color.Transparent;
+            this.diyetatacks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("diyetatacks.BackgroundImage")));
+            this.diyetatacks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.diyetatacks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.diyetatacks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.diyetatacks.ForeColor = System.Drawing.Color.Transparent;
+            this.diyetatacks.Location = new System.Drawing.Point(322, 0);
+            this.diyetatacks.Name = "diyetatacks";
+            this.diyetatacks.Size = new System.Drawing.Size(40, 40);
+            this.diyetatacks.TabIndex = 46;
+            this.diyetatacks.UseVisualStyleBackColor = false;
+            this.diyetatacks.Click += new System.EventHandler(this.anasycks_Click);
             // 
             // diyet_ata
             // 
@@ -147,7 +151,7 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(360, 379);
-            this.Controls.Add(this.anasycks);
+            this.Controls.Add(this.diyetatacks);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.geri_btn);
@@ -177,6 +181,6 @@ namespace Tasarım_Mimarisi
         private System.Windows.Forms.Button geri_btn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button anasycks;
+        private System.Windows.Forms.Button diyetatacks;
     }
 }

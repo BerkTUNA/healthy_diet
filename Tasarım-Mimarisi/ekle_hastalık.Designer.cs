@@ -32,14 +32,15 @@ namespace Tasarım_Mimarisi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ekle_hastalık));
             this.hastalik = new System.Windows.Forms.TextBox();
             this.ekle_btn = new System.Windows.Forms.Button();
-            this.anasycks = new System.Windows.Forms.Button();
+            this.ehastalikcks = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // hastalik
             // 
             this.hastalik.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.hastalik.Location = new System.Drawing.Point(87, 77);
+            this.hastalik.Location = new System.Drawing.Point(87, 93);
             this.hastalik.Name = "hastalik";
             this.hastalik.Size = new System.Drawing.Size(125, 26);
             this.hastalik.TabIndex = 1;
@@ -58,32 +59,44 @@ namespace Tasarım_Mimarisi
             this.ekle_btn.UseVisualStyleBackColor = true;
             this.ekle_btn.Click += new System.EventHandler(this.ekle_btn_Click);
             // 
-            // anasycks
+            // ehastalikcks
             // 
-            this.anasycks.BackColor = System.Drawing.Color.Transparent;
-            this.anasycks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("anasycks.BackgroundImage")));
-            this.anasycks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.anasycks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anasycks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.anasycks.ForeColor = System.Drawing.Color.Transparent;
-            this.anasycks.Location = new System.Drawing.Point(350, 0);
-            this.anasycks.Name = "anasycks";
-            this.anasycks.Size = new System.Drawing.Size(40, 40);
-            this.anasycks.TabIndex = 50;
-            this.anasycks.UseVisualStyleBackColor = false;
-            this.anasycks.Click += new System.EventHandler(this.anasycks_Click);
+            this.ehastalikcks.BackColor = System.Drawing.Color.Transparent;
+            this.ehastalikcks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ehastalikcks.BackgroundImage")));
+            this.ehastalikcks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ehastalikcks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ehastalikcks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ehastalikcks.ForeColor = System.Drawing.Color.Transparent;
+            this.ehastalikcks.Location = new System.Drawing.Point(350, 0);
+            this.ehastalikcks.Name = "ehastalikcks";
+            this.ehastalikcks.Size = new System.Drawing.Size(40, 40);
+            this.ehastalikcks.TabIndex = 50;
+            this.ehastalikcks.UseVisualStyleBackColor = false;
+            this.ehastalikcks.Click += new System.EventHandler(this.anasycks_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Impact", 13F);
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(93, 143);
+            this.label2.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.label2.Location = new System.Drawing.Point(93, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 22);
             this.label2.TabIndex = 51;
             this.label2.Text = "Hastalığı Ekle";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 13F);
+            this.label1.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.label1.Location = new System.Drawing.Point(97, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 22);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Hastalık Adı";
             // 
             // ekle_hastalık
             // 
@@ -93,8 +106,9 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(390, 340);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.anasycks);
+            this.Controls.Add(this.ehastalikcks);
             this.Controls.Add(this.ekle_btn);
             this.Controls.Add(this.hastalik);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -110,7 +124,8 @@ namespace Tasarım_Mimarisi
         #endregion
         private System.Windows.Forms.TextBox hastalik;
         private System.Windows.Forms.Button ekle_btn;
-        private System.Windows.Forms.Button anasycks;
+        private System.Windows.Forms.Button ehastalikcks;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

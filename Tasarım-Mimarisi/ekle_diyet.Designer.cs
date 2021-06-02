@@ -32,8 +32,9 @@ namespace Tasarım_Mimarisi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ekle_diyet));
             this.ekle_btn = new System.Windows.Forms.Button();
             this.diyet = new System.Windows.Forms.TextBox();
-            this.anasycks = new System.Windows.Forms.Button();
+            this.ediyetcks = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ekle_btn
@@ -55,37 +56,51 @@ namespace Tasarım_Mimarisi
             // diyet
             // 
             this.diyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.diyet.Location = new System.Drawing.Point(64, 58);
+            this.diyet.Location = new System.Drawing.Point(64, 73);
             this.diyet.Name = "diyet";
             this.diyet.Size = new System.Drawing.Size(117, 26);
             this.diyet.TabIndex = 4;
+            this.diyet.Enter += new System.EventHandler(this.diyet_Enter);
+            this.diyet.Leave += new System.EventHandler(this.diyet_Leave);
             // 
-            // anasycks
+            // ediyetcks
             // 
-            this.anasycks.BackColor = System.Drawing.Color.Transparent;
-            this.anasycks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("anasycks.BackgroundImage")));
-            this.anasycks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.anasycks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anasycks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.anasycks.ForeColor = System.Drawing.Color.Transparent;
-            this.anasycks.Location = new System.Drawing.Point(322, -1);
-            this.anasycks.Name = "anasycks";
-            this.anasycks.Size = new System.Drawing.Size(25, 25);
-            this.anasycks.TabIndex = 47;
-            this.anasycks.UseVisualStyleBackColor = false;
-            this.anasycks.Click += new System.EventHandler(this.anasycks_Click);
+            this.ediyetcks.BackColor = System.Drawing.Color.Transparent;
+            this.ediyetcks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ediyetcks.BackgroundImage")));
+            this.ediyetcks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ediyetcks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ediyetcks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ediyetcks.ForeColor = System.Drawing.Color.Transparent;
+            this.ediyetcks.Location = new System.Drawing.Point(316, -1);
+            this.ediyetcks.Name = "ediyetcks";
+            this.ediyetcks.Size = new System.Drawing.Size(31, 30);
+            this.ediyetcks.TabIndex = 47;
+            this.ediyetcks.UseVisualStyleBackColor = false;
+            this.ediyetcks.Click += new System.EventHandler(this.anasycks_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 13F);
-            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(83, 119);
+            this.label1.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.label1.Location = new System.Drawing.Point(100, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 22);
+            this.label1.Size = new System.Drawing.Size(40, 22);
             this.label1.TabIndex = 48;
-            this.label1.Text = "Diyeti Ekle";
+            this.label1.Text = "Ekle";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Impact", 13F);
+            this.label2.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.label2.Location = new System.Drawing.Point(82, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 22);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Diyet Adı";
             // 
             // ekle_diyet
             // 
@@ -95,8 +110,9 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(345, 290);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.anasycks);
+            this.Controls.Add(this.ediyetcks);
             this.Controls.Add(this.ekle_btn);
             this.Controls.Add(this.diyet);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -113,7 +129,8 @@ namespace Tasarım_Mimarisi
 
         private System.Windows.Forms.Button ekle_btn;
         private System.Windows.Forms.TextBox diyet;
-        private System.Windows.Forms.Button anasycks;
+        private System.Windows.Forms.Button ediyetcks;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

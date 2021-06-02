@@ -23,5 +23,10 @@ namespace Tasarım_Mimarisi
             diyetis_lis.Show();
             this.Hide();
         }
+
+        private void ekle_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

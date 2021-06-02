@@ -31,7 +31,7 @@ namespace Tasarım_Mimarisi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rapor));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.anasycks = new System.Windows.Forms.Button();
+            this.raporcks = new System.Windows.Forms.Button();
             this.cikis_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -39,6 +39,7 @@ namespace Tasarım_Mimarisi
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -48,20 +49,20 @@ namespace Tasarım_Mimarisi
             this.dataGridView1.Size = new System.Drawing.Size(207, 304);
             this.dataGridView1.TabIndex = 7;
             // 
-            // anasycks
+            // raporcks
             // 
-            this.anasycks.BackColor = System.Drawing.Color.Transparent;
-            this.anasycks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("anasycks.BackgroundImage")));
-            this.anasycks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.anasycks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anasycks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.anasycks.ForeColor = System.Drawing.Color.Transparent;
-            this.anasycks.Location = new System.Drawing.Point(720, -1);
-            this.anasycks.Name = "anasycks";
-            this.anasycks.Size = new System.Drawing.Size(55, 58);
-            this.anasycks.TabIndex = 11;
-            this.anasycks.UseVisualStyleBackColor = false;
-            this.anasycks.Click += new System.EventHandler(this.anasycks_Click);
+            this.raporcks.BackColor = System.Drawing.Color.Transparent;
+            this.raporcks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("raporcks.BackgroundImage")));
+            this.raporcks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.raporcks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.raporcks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.raporcks.ForeColor = System.Drawing.Color.Transparent;
+            this.raporcks.Location = new System.Drawing.Point(720, -1);
+            this.raporcks.Name = "raporcks";
+            this.raporcks.Size = new System.Drawing.Size(55, 58);
+            this.raporcks.TabIndex = 11;
+            this.raporcks.UseVisualStyleBackColor = false;
+            this.raporcks.Click += new System.EventHandler(this.anasycks_Click);
             // 
             // cikis_btn
             // 
@@ -84,7 +85,7 @@ namespace Tasarım_Mimarisi
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Impact", 12F);
-            this.label7.ForeColor = System.Drawing.Color.CadetBlue;
+            this.label7.ForeColor = System.Drawing.Color.LightSkyBlue;
             this.label7.Location = new System.Drawing.Point(354, 350);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 20);
@@ -101,7 +102,7 @@ namespace Tasarım_Mimarisi
             this.ClientSize = new System.Drawing.Size(772, 517);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cikis_btn);
-            this.Controls.Add(this.anasycks);
+            this.Controls.Add(this.raporcks);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -116,7 +117,7 @@ namespace Tasarım_Mimarisi
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button anasycks;
+        private System.Windows.Forms.Button raporcks;
         private System.Windows.Forms.Button cikis_btn;
         private System.Windows.Forms.Label label7;
     }

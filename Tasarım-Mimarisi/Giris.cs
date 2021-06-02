@@ -45,7 +45,7 @@ namespace Tasarım_Mimarisi
                 }
 
             }
-            if (kullanici.Text=="" || sifre.Text=="")
+            if (kullanici.Text =="Kullanıcı-Adı" ||   sifre.Text == "Parola")
             {
                 MessageBox.Show("Kullanici Adi veya şifre boş geçilmez", "Tamam");
             }
@@ -65,6 +65,54 @@ namespace Tasarım_Mimarisi
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void kullanici_Enter(object sender, EventArgs e)
+        {
+            if(kullanici.Text=="Kullanıcı-Adı")
+            {
+                kullanici.Text = "";
+                kullanici.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void kullanici_Leave(object sender, EventArgs e)
+        {
+            if (kullanici.Text == "")
+            {
+                kullanici.Text = "Kullanıcı-Adı";
+                kullanici.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void sifre_Enter(object sender, EventArgs e)
+        {
+            if (sifre.Text == "Parola")
+            {
+                sifre.Text = "";
+                sifre.PasswordChar = '*';
+                sifre.ForeColor = Color.Black;
+
+            }
+        }
+        char? passwordgiris = null;
+        private void sifre_Leave(object sender, EventArgs e)
+        {
+            if (sifre.Text == "")
+            {
+                sifre.Text = "Parola";
+                sifre.PasswordChar = Convert.ToChar(passwordgiris);
+
+                sifre.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void kullanici_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,5 +34,15 @@ namespace Tasarım_Mimarisi
             ana.Show();
             this.Hide();
         }
+
+        private void diyet_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void diyet_Leave(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

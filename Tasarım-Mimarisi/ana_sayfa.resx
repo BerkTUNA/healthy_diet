@@ -34318,7 +34318,10 @@
   <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <metadata name="Erkek.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Erkek.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAISxJREFUeF7t
         fXdQVNu6552qmT9mqmaqpmqmampezZvw6s7Mu/fd++rdeffVkZyDgYwJhQOYQECCCZAgOUgGyRkJHj0m
@@ -34465,7 +34468,7 @@
         MRdCAWMfjmciR+Oly3LyVAOTIMDvfvf/Afm7HbT7kC46AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Kadin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAIt9JREFUeF7t
         fXdQlVm279SdP17VK/95/716daverXvf1A09b+7MnTt3uslJEEUyIjmIiIDkHERAVFBRbEVUQBAkigEz

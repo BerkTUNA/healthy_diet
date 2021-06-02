@@ -49,19 +49,23 @@ namespace Tasarım_Mimarisi
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Erkek = new System.Windows.Forms.Button();
+            this.Kadin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.LightGray;
             this.dataGridView1.Location = new System.Drawing.Point(64, 79);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(622, 148);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -303,35 +307,36 @@ namespace Tasarım_Mimarisi
             this.label9.Size = new System.Drawing.Size(54, 27);
             this.label9.TabIndex = 18;
             this.label9.Text = "Berk";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // button1
+            // Erkek
             // 
-            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(59, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 128);
-            this.button1.TabIndex = 19;
-            this.button1.UseVisualStyleBackColor = false;
+            this.Erkek.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.Erkek.BackColor = System.Drawing.Color.Transparent;
+            this.Erkek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Erkek.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Erkek.ForeColor = System.Drawing.Color.White;
+            this.Erkek.Image = ((System.Drawing.Image)(resources.GetObject("Erkek.Image")));
+            this.Erkek.Location = new System.Drawing.Point(59, 386);
+            this.Erkek.Name = "Erkek";
+            this.Erkek.Size = new System.Drawing.Size(102, 128);
+            this.Erkek.TabIndex = 19;
+            this.Erkek.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Kadin
             // 
-            this.button2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(8, 386);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 128);
-            this.button2.TabIndex = 20;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
+            this.Kadin.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.Kadin.BackColor = System.Drawing.Color.Transparent;
+            this.Kadin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Kadin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Kadin.ForeColor = System.Drawing.Color.White;
+            this.Kadin.Image = ((System.Drawing.Image)(resources.GetObject("Kadin.Image")));
+            this.Kadin.Location = new System.Drawing.Point(320, 386);
+            this.Kadin.Name = "Kadin";
+            this.Kadin.Size = new System.Drawing.Size(102, 128);
+            this.Kadin.TabIndex = 20;
+            this.Kadin.UseVisualStyleBackColor = false;
+            this.Kadin.Visible = false;
             // 
             // ana_sayfa
             // 
@@ -340,8 +345,8 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(772, 517);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Kadin);
+            this.Controls.Add(this.Erkek);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -394,7 +399,7 @@ namespace Tasarım_Mimarisi
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Erkek;
+        private System.Windows.Forms.Button Kadin;
     }
 }

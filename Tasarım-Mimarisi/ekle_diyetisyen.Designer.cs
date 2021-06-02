@@ -68,6 +68,7 @@ namespace Tasarım_Mimarisi
             this.ekle_btn.TabIndex = 6;
             this.ekle_btn.Text = "Ekle";
             this.ekle_btn.UseVisualStyleBackColor = true;
+            this.ekle_btn.Click += new System.EventHandler(this.ekle_btn_Click);
             // 
             // ad
             // 

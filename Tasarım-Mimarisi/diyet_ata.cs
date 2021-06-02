@@ -51,6 +51,11 @@ namespace Tasarım_Mimarisi
             this.Hide();
         }
 
+        private void combobox_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void ekle_btn_Click(object sender, EventArgs e)
         {
             baglanti.Open();

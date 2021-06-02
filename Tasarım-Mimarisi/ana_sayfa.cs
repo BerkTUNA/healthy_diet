@@ -35,6 +35,10 @@ namespace Tasarım_Mimarisi
             OleDbDataAdapter liste = new OleDbDataAdapter("select *from Hastalar", baglanti);
             liste.Fill(tablo);
             dataGridView1.DataSource = tablo;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.White;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Green;
+
+
             baglanti.Close();
         }
         private void yeni_btn_Click(object sender, EventArgs e)
@@ -83,6 +87,16 @@ namespace Tasarım_Mimarisi
            
             label9.Text = isim;
             listeleme();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

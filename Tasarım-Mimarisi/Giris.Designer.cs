@@ -47,18 +47,26 @@ namespace Tasarım_Mimarisi
             this.kullanici.Name = "kullanici";
             this.kullanici.Size = new System.Drawing.Size(157, 20);
             this.kullanici.TabIndex = 2;
+            this.kullanici.TextChanged += new System.EventHandler(this.kullanici_TextChanged);
+            this.kullanici.Enter += new System.EventHandler(this.kullanici_Enter);
+            this.kullanici.Leave += new System.EventHandler(this.kullanici_Leave);
             // 
             // sifre
             // 
             this.sifre.BackColor = System.Drawing.Color.White;
+            this.sifre.ForeColor = System.Drawing.Color.Silver;
             this.sifre.Location = new System.Drawing.Point(199, 366);
             this.sifre.Name = "sifre";
             this.sifre.Size = new System.Drawing.Size(157, 20);
             this.sifre.TabIndex = 3;
+            this.sifre.Text = "Parola";
+            this.sifre.Enter += new System.EventHandler(this.sifre_Enter);
+            this.sifre.Leave += new System.EventHandler(this.sifre_Leave);
             // 
             // giris_btn
             // 
             this.giris_btn.BackColor = System.Drawing.Color.White;
+            this.giris_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.giris_btn.Font = new System.Drawing.Font("Impact", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.giris_btn.ForeColor = System.Drawing.Color.SteelBlue;
             this.giris_btn.Location = new System.Drawing.Point(199, 404);

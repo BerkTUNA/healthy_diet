@@ -62,5 +62,100 @@ namespace Tasarım_Mimarisi
         {
             item_add();
         }
+
+        private void ad_txt_Enter(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void ad_txt_Leave(object sender, EventArgs e)
+        {
+            if (ad_txt.Text == "")
+            {
+                ad_txt.Text = "Ad";
+                ad_txt.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void soyad_txt_Enter(object sender, EventArgs e)
+        {
+            if (soyad_txt.Text == "Soyad")
+            {
+                soyad_txt.Text = "";
+                soyad_txt.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void soyad_txt_Leave(object sender, EventArgs e)
+        {
+            if (soyad_txt.Text == "")
+            {
+                soyad_txt.Text = "Soyad";
+                soyad_txt.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void tc_txt_Enter(object sender, EventArgs e)
+        {
+            if (tc_txt.Text == "TC")
+            {
+                tc_txt.Text = "";
+                tc_txt.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void tc_txt_Leave(object sender, EventArgs e)
+        {
+            if (tc_txt.Text == "")
+            {
+                tc_txt.Text = "TC";
+                tc_txt.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void telefon_txt_Enter(object sender, EventArgs e)
+        {
+            if (telefon_txt.Text == "Telefon")
+            {
+                telefon_txt.Text = "";
+                telefon_txt.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void telefon_txt_Leave(object sender, EventArgs e)
+        {
+            if (telefon_txt.Text == "")
+            {
+                telefon_txt.Text = "Telefon";
+                telefon_txt.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void comboboxteshis_Enter(object sender, EventArgs e)
+        {
+            if (comboboxteshis.Text == "Teşhis Seçiniz")
+            {
+                comboboxteshis.Text = "";
+                comboboxteshis.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void comboboxteshis_Leave(object sender, EventArgs e)
+        {
+            if (comboboxteshis.Text == "")
+            {
+                comboboxteshis.Text = "Teşhis Seçiniz";
+                comboboxteshis.ForeColor = Color.Silver;
+
+            }
+        }
     }
 }
