@@ -29,6 +29,7 @@ namespace Tasarım_Mimarisi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hastalar));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.hastalar_lbl = new System.Windows.Forms.Label();
             this.geri_btn = new System.Windows.Forms.Button();
@@ -72,6 +73,7 @@ namespace Tasarım_Mimarisi
             this.Controls.Add(this.geri_btn);
             this.Controls.Add(this.hastalar_lbl);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "hastalar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hastalar";

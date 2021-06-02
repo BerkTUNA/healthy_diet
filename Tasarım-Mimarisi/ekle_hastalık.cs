@@ -22,5 +22,17 @@ namespace Tasarım_Mimarisi
             MessageBox.Show("Hastalık Eklendi", "Tamam");
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void anasycks_Click(object sender, EventArgs e)
+        {
+            ana_sayfa ana = new ana_sayfa();
+            ana.Show();
+            this.Hide();
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace Tasarım_Mimarisi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ekle_diyetisyen));
             this.geri_btn = new System.Windows.Forms.Button();
             this.ekle_btn = new System.Windows.Forms.Button();
             this.ad = new System.Windows.Forms.Label();
@@ -208,6 +209,7 @@ namespace Tasarım_Mimarisi
             this.Controls.Add(this.ad);
             this.Controls.Add(this.ekle_btn);
             this.Controls.Add(this.geri_btn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ekle_diyetisyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ekle_diyetisyen";

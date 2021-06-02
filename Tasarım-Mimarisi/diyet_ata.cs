@@ -24,9 +24,24 @@ namespace Tasarım_Mimarisi
 
         private void geri_btn_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void cikis_btn_Click(object sender, EventArgs e)
+        {
             ana_sayfa ana = new ana_sayfa();
             ana.Show();
             this.Hide();
+        }
+
+        private void ekle_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void anasycks_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

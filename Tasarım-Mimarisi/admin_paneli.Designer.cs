@@ -29,6 +29,7 @@ namespace Tasarım_Mimarisi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_paneli));
             this.cikis_btn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.hasta_btn = new System.Windows.Forms.Button();
@@ -98,6 +99,7 @@ namespace Tasarım_Mimarisi
             this.Controls.Add(this.hasta_btn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cikis_btn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "admin_paneli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";

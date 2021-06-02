@@ -22,5 +22,12 @@ namespace Tasarım_Mimarisi
             MessageBox.Show("Diyet Eklendi", "Tamam");
             this.Hide();
         }
+
+        private void anasycks_Click(object sender, EventArgs e)
+        {
+            ana_sayfa ana = new ana_sayfa();
+            ana.Show();
+            this.Hide();
+        }
     }
 }

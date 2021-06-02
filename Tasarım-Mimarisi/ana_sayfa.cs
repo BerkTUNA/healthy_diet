@@ -21,6 +21,8 @@ namespace Tasarım_Mimarisi
         {
             Giris giris_say = new Giris();
             giris_say.Show();
+            ana_sayfa ana = new ana_sayfa();
+            ana.Hide();
             this.Hide();
         }
 
@@ -55,6 +57,11 @@ namespace Tasarım_Mimarisi
         {
             ekle_diyet ekle = new ekle_diyet();
             ekle.ShowDialog();
+        }
+
+        private void giriscks_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
