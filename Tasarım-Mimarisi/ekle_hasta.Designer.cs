@@ -68,10 +68,12 @@ namespace Tasarım_Mimarisi
             // 
             // ad_txt
             // 
+            this.ad_txt.ForeColor = System.Drawing.Color.LightGray;
             this.ad_txt.Location = new System.Drawing.Point(171, 87);
             this.ad_txt.Name = "ad_txt";
             this.ad_txt.Size = new System.Drawing.Size(145, 20);
             this.ad_txt.TabIndex = 23;
+            this.ad_txt.Text = "Ad";
             this.ad_txt.Enter += new System.EventHandler(this.ad_txt_Enter);
             this.ad_txt.Leave += new System.EventHandler(this.ad_txt_Leave);
             // 

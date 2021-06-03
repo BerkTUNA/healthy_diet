@@ -114,5 +114,10 @@ namespace Tasarım_Mimarisi
         {
 
         }
+
+        private void Giris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
