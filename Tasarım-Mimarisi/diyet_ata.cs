@@ -14,6 +14,7 @@ namespace Tasarım_Mimarisi
     public partial class diyet_ata : Form
     {
         public string ad, soyad, tc;
+        public string isim;
         public diyet_ata()
         {
             InitializeComponent();
@@ -47,6 +48,7 @@ namespace Tasarım_Mimarisi
         private void cikis_btn_Click(object sender, EventArgs e)
         {
             ana_sayfa ana = new ana_sayfa();
+            ana.isim = isim;
             ana.Show();
             this.Hide();
         }

@@ -143,6 +143,9 @@ namespace Tasarım_Mimarisi
             // 
             this.Cinsiyet.ForeColor = System.Drawing.Color.LightGray;
             this.Cinsiyet.FormattingEnabled = true;
+            this.Cinsiyet.Items.AddRange(new object[] {
+            "Erkek",
+            "Kadın"});
             this.Cinsiyet.Location = new System.Drawing.Point(26, 258);
             this.Cinsiyet.Name = "Cinsiyet";
             this.Cinsiyet.Size = new System.Drawing.Size(135, 21);
@@ -243,6 +246,7 @@ namespace Tasarım_Mimarisi
             this.Name = "ekle_diyetisyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ekle_diyetisyen";
+            this.Load += new System.EventHandler(this.ekle_diyetisyen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

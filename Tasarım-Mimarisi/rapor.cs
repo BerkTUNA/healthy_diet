@@ -12,6 +12,7 @@ namespace Tasarım_Mimarisi
 {
     public partial class rapor : Form
     {
+        public string isim;
         public rapor()
         {
             InitializeComponent();
@@ -30,8 +31,14 @@ namespace Tasarım_Mimarisi
         private void cikis_btn_Click(object sender, EventArgs e)
         {
             ana_sayfa ana = new ana_sayfa();
+            ana.isim = isim;
             ana.Show();
             this.Hide();
+        }
+
+        private void rapor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

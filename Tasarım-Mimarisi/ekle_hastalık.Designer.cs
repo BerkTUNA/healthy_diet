@@ -116,6 +116,7 @@ namespace Tasarım_Mimarisi
             this.Name = "ekle_hastalık";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hastalık Ekle";
+            this.Load += new System.EventHandler(this.ekle_hastalık_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

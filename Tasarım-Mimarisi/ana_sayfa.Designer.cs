@@ -167,6 +167,7 @@ namespace Tasarım_Mimarisi
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(135, 21);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // filtre
             // 
@@ -331,7 +332,7 @@ namespace Tasarım_Mimarisi
             this.Kadin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Kadin.ForeColor = System.Drawing.Color.White;
             this.Kadin.Image = ((System.Drawing.Image)(resources.GetObject("Kadin.Image")));
-            this.Kadin.Location = new System.Drawing.Point(320, 386);
+            this.Kadin.Location = new System.Drawing.Point(61, 386);
             this.Kadin.Name = "Kadin";
             this.Kadin.Size = new System.Drawing.Size(102, 128);
             this.Kadin.TabIndex = 20;

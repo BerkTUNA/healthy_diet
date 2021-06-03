@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tasarım_Mimarisi
 {
     public partial class ekle_diyetisyen : Form
     {
+        bool kayit_yapildi = true;
+        bool kullanici_adi_yok = true;
         public ekle_diyetisyen()
         {
             InitializeComponent();
         }
-
+        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
         private void geri_btn_Click(object sender, EventArgs e)
         {
             
@@ -24,7 +27,53 @@ namespace Tasarım_Mimarisi
 
         private void ekle_btn_Click(object sender, EventArgs e)
         {
+            kayit_yapildi = true;
+            kullanici_adi_yok = true;
+            for (int i = 0; i < Controls.Count; i++)
+            {
+                if (Controls[i] is TextBox)
+                {
+                    if (Controls[i].Text == "Ad" || Controls[i].Text == "Soyad" || Controls[i].Text == "Kullanıcı-Adı" || Controls[i].Text == "Parola" || Controls[i].Text == "TC" || Controls[i].Text == "E-mail" || Controls[i].Text == "Adres" || Controls[i].Text == "Telefon")
+                    {
+                        MessageBox.Show("Eksik Bilgi Girdiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        kayit_yapildi = false;
+                        break;
 
+
+                    }
+
+
+                }
+
+            }
+            baglanti.Open();
+            OleDbCommand sorgu = new OleDbCommand("select *from Diyetisyenler", baglanti);
+            OleDbDataReader oku = sorgu.ExecuteReader();
+            while (oku.Read())
+            {
+                if (kullanici_txt.Text == oku["KullaniciAdi"].ToString())
+                {
+                    MessageBox.Show("Kullanici Adi Kullanılmakta.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    kullanici_adi_yok = false;
+                    break;
+
+                }
+            }
+            baglanti.Close();
+            if (sifre2_txt.Text!=sifre_txt.Text)
+            {
+
+                MessageBox.Show("Sifreler aynı degil.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                baglanti.Close();
+
+            }
+            else
+            {
+                if (kullanici_adi_yok && kayit_yapildi)
+                {
+                    ekle();
+                }
+            }
         }
 
         private void adminpcks_Click(object sender, EventArgs e)
@@ -36,6 +85,17 @@ namespace Tasarım_Mimarisi
         {
             diyetisyenler diyetis_lis = new diyetisyenler();
             diyetis_lis.Show();
+            this.Hide();
+        }
+        private void ekle()
+        {
+            baglanti.Open();
+            OleDbCommand komut = new OleDbCommand("insert into Diyetisyenler(Ad,Soyad,Cinsiyet,Tc,KullaniciAdi,Sifre,SifreTekrar,ePosta) values('" + ad_txt.Text + "','" + soyad_txt.Text + "','" + Cinsiyet.SelectedItem.ToString() + "','" + tc_txt.Text + "','" + kullanici_txt.Text + "','" + sifre_txt.Text + "','" + sifre2_txt.Text + "','" + eposta_txt.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Diyetisyen Eklendi", "Tamam");
+            diyetisyenler list = new diyetisyenler();
+            list.Show();
             this.Hide();
         }
 
@@ -203,6 +263,11 @@ namespace Tasarım_Mimarisi
                 sifre2_txt.ForeColor = Color.Silver;
 
             }
+        }
+
+        private void ekle_diyetisyen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

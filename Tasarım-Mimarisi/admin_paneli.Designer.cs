@@ -37,7 +37,7 @@ namespace Tasarım_Mimarisi
             this.adminpcks = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.filtre = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.flitre = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -138,13 +138,14 @@ namespace Tasarım_Mimarisi
             this.filtre.TabIndex = 13;
             this.filtre.Text = "Filtrele:";
             // 
-            // comboBox1
+            // flitre
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(381, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 21);
-            this.comboBox1.TabIndex = 14;
+            this.flitre.FormattingEnabled = true;
+            this.flitre.Location = new System.Drawing.Point(381, 55);
+            this.flitre.Name = "flitre";
+            this.flitre.Size = new System.Drawing.Size(135, 21);
+            this.flitre.TabIndex = 14;
+            this.flitre.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -192,7 +193,7 @@ namespace Tasarım_Mimarisi
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.flitre);
             this.Controls.Add(this.filtre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.adminpcks);
@@ -221,7 +222,7 @@ namespace Tasarım_Mimarisi
         private System.Windows.Forms.Button adminpcks;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label filtre;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox flitre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

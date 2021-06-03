@@ -120,6 +120,7 @@ namespace Tasarım_Mimarisi
             this.Name = "ekle_diyet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diyet Ekle";
+            this.Load += new System.EventHandler(this.ekle_diyet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
