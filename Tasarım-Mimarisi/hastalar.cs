@@ -48,5 +48,10 @@ namespace Tasarım_Mimarisi
         {
             listeleme();
         }
+
+        private void adminpcks_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

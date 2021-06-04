@@ -23,7 +23,7 @@ namespace Tasarım_Mimarisi
         private void listeleme()
         {
             baglanti.Open();
-            OleDbDataAdapter liste = new OleDbDataAdapter("select * from Diyetisyenler", baglanti);
+            OleDbDataAdapter liste = new OleDbDataAdapter("select * from Diyetisyenler where Yetki='" + "Diyetisyen" + "'", baglanti);
             liste.Fill(tablo);
             dataGridView4.DataSource = tablo;
             dataGridView4.DefaultCellStyle.SelectionBackColor = Color.White;

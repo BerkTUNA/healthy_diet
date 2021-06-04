@@ -34,6 +34,7 @@ namespace Tasarım_Mimarisi
             this.cikis_btn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.adminpcks = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +88,21 @@ namespace Tasarım_Mimarisi
             this.label1.TabIndex = 19;
             this.label1.Text = "Tüm Hastalar:";
             // 
+            // adminpcks
+            // 
+            this.adminpcks.BackColor = System.Drawing.Color.Transparent;
+            this.adminpcks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adminpcks.BackgroundImage")));
+            this.adminpcks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adminpcks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adminpcks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminpcks.ForeColor = System.Drawing.Color.Transparent;
+            this.adminpcks.Location = new System.Drawing.Point(526, 0);
+            this.adminpcks.Name = "adminpcks";
+            this.adminpcks.Size = new System.Drawing.Size(40, 40);
+            this.adminpcks.TabIndex = 20;
+            this.adminpcks.UseVisualStyleBackColor = false;
+            this.adminpcks.Click += new System.EventHandler(this.adminpcks_Click);
+            // 
             // hastalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +110,7 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(566, 566);
+            this.Controls.Add(this.adminpcks);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cikis_btn);
@@ -116,5 +133,6 @@ namespace Tasarım_Mimarisi
         private System.Windows.Forms.Button cikis_btn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button adminpcks;
     }
 }

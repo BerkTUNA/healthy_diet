@@ -112,7 +112,12 @@ namespace Tasarım_Mimarisi
 
         private void ad_txt_Enter(object sender, EventArgs e)
         {
-           
+            if (ad_txt.Text == "Ad")
+            {
+                ad_txt.Text = "";
+                ad_txt.ForeColor = Color.Black;
+
+            }
         }
 
         private void ad_txt_Leave(object sender, EventArgs e)

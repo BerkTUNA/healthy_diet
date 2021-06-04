@@ -31,17 +31,15 @@ namespace Tasarım_Mimarisi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_paneli));
             this.cikis_btn = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.hasta_btn = new System.Windows.Forms.Button();
             this.diyetis_btn = new System.Windows.Forms.Button();
             this.adminpcks = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.filtre = new System.Windows.Forms.Label();
-            this.flitre = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cikis_btn
@@ -58,18 +56,6 @@ namespace Tasarım_Mimarisi
             this.cikis_btn.TabIndex = 0;
             this.cikis_btn.UseVisualStyleBackColor = false;
             this.cikis_btn.Click += new System.EventHandler(this.cikis_btn_Click);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.Color.LightGray;
-            this.dataGridView2.Location = new System.Drawing.Point(49, 81);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(467, 192);
-            this.dataGridView2.TabIndex = 1;
             // 
             // hasta_btn
             // 
@@ -114,39 +100,6 @@ namespace Tasarım_Mimarisi
             this.adminpcks.UseVisualStyleBackColor = false;
             this.adminpcks.Click += new System.EventHandler(this.adminpcks_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 14F);
-            this.label1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label1.Location = new System.Drawing.Point(44, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 23);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Tüm Kullanıcılar:";
-            // 
-            // filtre
-            // 
-            this.filtre.AutoSize = true;
-            this.filtre.BackColor = System.Drawing.Color.Transparent;
-            this.filtre.Font = new System.Drawing.Font("Impact", 12F);
-            this.filtre.ForeColor = System.Drawing.Color.CadetBlue;
-            this.filtre.Location = new System.Drawing.Point(318, 54);
-            this.filtre.Name = "filtre";
-            this.filtre.Size = new System.Drawing.Size(57, 20);
-            this.filtre.TabIndex = 13;
-            this.filtre.Text = "Filtrele:";
-            // 
-            // flitre
-            // 
-            this.flitre.FormattingEnabled = true;
-            this.flitre.Location = new System.Drawing.Point(381, 55);
-            this.flitre.Name = "flitre";
-            this.flitre.Size = new System.Drawing.Size(135, 21);
-            this.flitre.TabIndex = 14;
-            this.flitre.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -183,6 +136,29 @@ namespace Tasarım_Mimarisi
             this.label4.TabIndex = 17;
             this.label4.Text = "Geri";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(49, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(467, 234);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Pristina", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(195, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 39);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Admin Paneli";
+            // 
             // admin_paneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,24 +166,23 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(566, 566);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.flitre);
-            this.Controls.Add(this.filtre);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.adminpcks);
             this.Controls.Add(this.diyetis_btn);
             this.Controls.Add(this.hasta_btn);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.cikis_btn);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "admin_paneli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";
             this.Load += new System.EventHandler(this.admin_paneli_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,15 +191,13 @@ namespace Tasarım_Mimarisi
         #endregion
 
         private System.Windows.Forms.Button cikis_btn;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button hasta_btn;
         private System.Windows.Forms.Button diyetis_btn;
         private System.Windows.Forms.Button adminpcks;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label filtre;
-        private System.Windows.Forms.ComboBox flitre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

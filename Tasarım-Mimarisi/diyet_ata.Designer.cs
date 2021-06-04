@@ -31,7 +31,7 @@ namespace Tasarım_Mimarisi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(diyet_ata));
             this.ekle_btn = new System.Windows.Forms.Button();
-            this.combobox = new System.Windows.Forms.ComboBox();
+            this.comboboxdiyet = new System.Windows.Forms.ComboBox();
             this.soyad_txt = new System.Windows.Forms.TextBox();
             this.tc_txt = new System.Windows.Forms.TextBox();
             this.ad_txt = new System.Windows.Forms.TextBox();
@@ -56,14 +56,18 @@ namespace Tasarım_Mimarisi
             this.ekle_btn.UseVisualStyleBackColor = false;
             this.ekle_btn.Click += new System.EventHandler(this.ekle_btn_Click);
             // 
-            // combobox
+            // comboboxdiyet
             // 
-            this.combobox.FormattingEnabled = true;
-            this.combobox.Location = new System.Drawing.Point(140, 170);
-            this.combobox.Name = "combobox";
-            this.combobox.Size = new System.Drawing.Size(171, 21);
-            this.combobox.TabIndex = 40;
-            this.combobox.Click += new System.EventHandler(this.combobox_Click);
+            this.comboboxdiyet.ForeColor = System.Drawing.Color.LightGray;
+            this.comboboxdiyet.FormattingEnabled = true;
+            this.comboboxdiyet.Location = new System.Drawing.Point(140, 170);
+            this.comboboxdiyet.Name = "comboboxdiyet";
+            this.comboboxdiyet.Size = new System.Drawing.Size(171, 21);
+            this.comboboxdiyet.TabIndex = 40;
+            this.comboboxdiyet.Text = "Diyet Seçiniz";
+            this.comboboxdiyet.Click += new System.EventHandler(this.combobox_Click);
+            this.comboboxdiyet.Enter += new System.EventHandler(this.combobox_Enter);
+            this.comboboxdiyet.Leave += new System.EventHandler(this.combobox_Leave);
             // 
             // soyad_txt
             // 
@@ -156,7 +160,7 @@ namespace Tasarım_Mimarisi
             this.Controls.Add(this.label7);
             this.Controls.Add(this.geri_btn);
             this.Controls.Add(this.ekle_btn);
-            this.Controls.Add(this.combobox);
+            this.Controls.Add(this.comboboxdiyet);
             this.Controls.Add(this.soyad_txt);
             this.Controls.Add(this.tc_txt);
             this.Controls.Add(this.ad_txt);
@@ -174,7 +178,7 @@ namespace Tasarım_Mimarisi
         #endregion
 
         private System.Windows.Forms.Button ekle_btn;
-        private System.Windows.Forms.ComboBox combobox;
+        private System.Windows.Forms.ComboBox comboboxdiyet;
         private System.Windows.Forms.TextBox soyad_txt;
         private System.Windows.Forms.TextBox tc_txt;
         private System.Windows.Forms.TextBox ad_txt;

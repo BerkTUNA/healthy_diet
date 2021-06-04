@@ -71,7 +71,7 @@ namespace Tasarım_Mimarisi
             this.ediyetcks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ediyetcks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ediyetcks.ForeColor = System.Drawing.Color.Transparent;
-            this.ediyetcks.Location = new System.Drawing.Point(316, -1);
+            this.ediyetcks.Location = new System.Drawing.Point(313, -1);
             this.ediyetcks.Name = "ediyetcks";
             this.ediyetcks.Size = new System.Drawing.Size(31, 30);
             this.ediyetcks.TabIndex = 47;

@@ -34,13 +34,13 @@ namespace Tasarım_Mimarisi
         }
         private void item_add()
         {
-            combobox.Items.Clear();
+            comboboxdiyet.Items.Clear();
             baglanti.Open();
             OleDbCommand sorgu = new OleDbCommand("select *from Diyetler", baglanti);
             OleDbDataReader oku = sorgu.ExecuteReader();
             while (oku.Read())
             {
-                combobox.Items.Add(oku["DiyetAdi"].ToString());
+                comboboxdiyet.Items.Add(oku["DiyetAdi"].ToString());
             }
             baglanti.Close();
         }
@@ -58,10 +58,30 @@ namespace Tasarım_Mimarisi
 
         }
 
+        private void combobox_Enter(object sender, EventArgs e)
+        {
+            if (comboboxdiyet.Text == "Diyet Seçiniz")
+            {
+                comboboxdiyet.Text = "";
+                comboboxdiyet.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void combobox_Leave(object sender, EventArgs e)
+        {
+            if (comboboxdiyet.Text == "")
+            {
+                comboboxdiyet.Text = "Diyet Seçiniz";
+                comboboxdiyet.ForeColor = Color.Silver;
+
+            }
+        }
+
         private void ekle_btn_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            OleDbCommand komut = new OleDbCommand("update Hastalar set Diyet = '" + combobox.SelectedItem.ToString() + "' where TC = '" + tc + "'", baglanti);
+            OleDbCommand komut = new OleDbCommand("update Hastalar set Diyet = '" + comboboxdiyet.SelectedItem.ToString() + "' where TC = '" + tc + "'", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Diyet ataması yapılmıştır!", "Tamam");
