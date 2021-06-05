@@ -46,6 +46,11 @@ namespace Tasarım_Mimarisi
                 }
 
             }
+            if (Cinsiyet.SelectedItem==null)
+            {
+                MessageBox.Show("Lütfen cinsiyet şeçimi yapınız!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                kayit_yapildi = false;
+            }
             baglanti.Open();
             OleDbCommand sorgu = new OleDbCommand("select *from Diyetisyenler", baglanti);
             OleDbDataReader oku = sorgu.ExecuteReader();

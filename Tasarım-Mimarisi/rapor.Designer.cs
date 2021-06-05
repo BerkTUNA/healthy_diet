@@ -30,24 +30,18 @@ namespace Tasarım_Mimarisi
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rapor));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.raporcks = new System.Windows.Forms.Button();
             this.cikis_btn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.tc_lbl = new System.Windows.Forms.Label();
+            this.telefon_lbl = new System.Windows.Forms.Label();
+            this.soyad_lbl = new System.Windows.Forms.Label();
+            this.ad_lbl = new System.Windows.Forms.Label();
+            this.diyet_lbl = new System.Windows.Forms.Label();
+            this.teshis_lbl = new System.Windows.Forms.Label();
+            this.rapor_btn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(209, 66);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(207, 304);
-            this.dataGridView1.TabIndex = 7;
             // 
             // raporcks
             // 
@@ -80,17 +74,95 @@ namespace Tasarım_Mimarisi
             this.cikis_btn.UseVisualStyleBackColor = false;
             this.cikis_btn.Click += new System.EventHandler(this.cikis_btn_Click);
             // 
-            // label7
+            // tc_lbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Impact", 12F);
-            this.label7.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label7.Location = new System.Drawing.Point(354, 350);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 20);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Rapor Al";
+            this.tc_lbl.AutoSize = true;
+            this.tc_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.tc_lbl.Font = new System.Drawing.Font("Impact", 12F);
+            this.tc_lbl.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.tc_lbl.Location = new System.Drawing.Point(224, 77);
+            this.tc_lbl.Name = "tc_lbl";
+            this.tc_lbl.Size = new System.Drawing.Size(23, 20);
+            this.tc_lbl.TabIndex = 20;
+            this.tc_lbl.Text = "Tc";
+            // 
+            // telefon_lbl
+            // 
+            this.telefon_lbl.AutoSize = true;
+            this.telefon_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.telefon_lbl.Font = new System.Drawing.Font("Impact", 12F);
+            this.telefon_lbl.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.telefon_lbl.Location = new System.Drawing.Point(224, 224);
+            this.telefon_lbl.Name = "telefon_lbl";
+            this.telefon_lbl.Size = new System.Drawing.Size(56, 20);
+            this.telefon_lbl.TabIndex = 22;
+            this.telefon_lbl.Text = "Telefon";
+            // 
+            // soyad_lbl
+            // 
+            this.soyad_lbl.AutoSize = true;
+            this.soyad_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.soyad_lbl.Font = new System.Drawing.Font("Impact", 12F);
+            this.soyad_lbl.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.soyad_lbl.Location = new System.Drawing.Point(224, 175);
+            this.soyad_lbl.Name = "soyad_lbl";
+            this.soyad_lbl.Size = new System.Drawing.Size(48, 20);
+            this.soyad_lbl.TabIndex = 23;
+            this.soyad_lbl.Text = "Soyad";
+            // 
+            // ad_lbl
+            // 
+            this.ad_lbl.AutoSize = true;
+            this.ad_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.ad_lbl.Font = new System.Drawing.Font("Impact", 12F);
+            this.ad_lbl.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.ad_lbl.Location = new System.Drawing.Point(224, 126);
+            this.ad_lbl.Name = "ad_lbl";
+            this.ad_lbl.Size = new System.Drawing.Size(24, 20);
+            this.ad_lbl.TabIndex = 24;
+            this.ad_lbl.Text = "Ad";
+            // 
+            // diyet_lbl
+            // 
+            this.diyet_lbl.AutoSize = true;
+            this.diyet_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.diyet_lbl.Font = new System.Drawing.Font("Impact", 12F);
+            this.diyet_lbl.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.diyet_lbl.Location = new System.Drawing.Point(224, 322);
+            this.diyet_lbl.Name = "diyet_lbl";
+            this.diyet_lbl.Size = new System.Drawing.Size(42, 20);
+            this.diyet_lbl.TabIndex = 21;
+            this.diyet_lbl.Text = "Diyet";
+            // 
+            // teshis_lbl
+            // 
+            this.teshis_lbl.AutoSize = true;
+            this.teshis_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.teshis_lbl.Font = new System.Drawing.Font("Impact", 12F);
+            this.teshis_lbl.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.teshis_lbl.Location = new System.Drawing.Point(224, 273);
+            this.teshis_lbl.Name = "teshis_lbl";
+            this.teshis_lbl.Size = new System.Drawing.Size(51, 20);
+            this.teshis_lbl.TabIndex = 25;
+            this.teshis_lbl.Text = "Teşhis";
+            // 
+            // rapor_btn
+            // 
+            this.rapor_btn.Location = new System.Drawing.Point(579, 414);
+            this.rapor_btn.Name = "rapor_btn";
+            this.rapor_btn.Size = new System.Drawing.Size(152, 69);
+            this.rapor_btn.TabIndex = 26;
+            this.rapor_btn.Text = "Rapor Al";
+            this.rapor_btn.UseVisualStyleBackColor = true;
+            this.rapor_btn.Click += new System.EventHandler(this.rapor_btn_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(92, 79);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(628, 96);
+            this.dataGridView1.TabIndex = 27;
             // 
             // rapor
             // 
@@ -100,10 +172,16 @@ namespace Tasarım_Mimarisi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(772, 517);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.rapor_btn);
+            this.Controls.Add(this.teshis_lbl);
+            this.Controls.Add(this.ad_lbl);
+            this.Controls.Add(this.soyad_lbl);
+            this.Controls.Add(this.telefon_lbl);
+            this.Controls.Add(this.diyet_lbl);
+            this.Controls.Add(this.tc_lbl);
             this.Controls.Add(this.cikis_btn);
             this.Controls.Add(this.raporcks);
-            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "rapor";
@@ -117,9 +195,15 @@ namespace Tasarım_Mimarisi
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button raporcks;
         private System.Windows.Forms.Button cikis_btn;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label tc_lbl;
+        private System.Windows.Forms.Label telefon_lbl;
+        private System.Windows.Forms.Label soyad_lbl;
+        private System.Windows.Forms.Label ad_lbl;
+        private System.Windows.Forms.Label diyet_lbl;
+        private System.Windows.Forms.Label teshis_lbl;
+        private System.Windows.Forms.Button rapor_btn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

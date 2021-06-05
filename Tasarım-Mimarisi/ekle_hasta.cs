@@ -101,6 +101,7 @@ namespace Tasarım_Mimarisi
             baglanti.Close();
             MessageBox.Show("Hasta başarılı bir şekilde eklendi!", "Tamam");
             ana_sayfa ana = new ana_sayfa();
+            ana.isim = isim;
             ana.Show();
             this.Hide();
         }

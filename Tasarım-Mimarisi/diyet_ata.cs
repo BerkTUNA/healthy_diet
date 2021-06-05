@@ -80,11 +80,20 @@ namespace Tasarım_Mimarisi
 
         private void ekle_btn_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            OleDbCommand komut = new OleDbCommand("update Hastalar set Diyet = '" + comboboxdiyet.SelectedItem.ToString() + "' where TC = '" + tc + "'", baglanti);
-            komut.ExecuteNonQuery();
-            baglanti.Close();
-            MessageBox.Show("Diyet ataması yapılmıştır!", "Tamam");
+            if (comboboxdiyet.Text=="Diyet Seçiniz")
+            {
+                MessageBox.Show("Lütfen Diyet seçiniz!", "Tamam");
+            }
+            else
+            {
+                baglanti.Open();
+                OleDbCommand komut = new OleDbCommand("update Hastalar set Diyet = '" + comboboxdiyet.SelectedItem.ToString() + "' where TC = '" + tc + "'", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Diyet ataması yapılmıştır!", "Tamam");
+            }
+            
+            
         }
 
         private void anasycks_Click(object sender, EventArgs e)

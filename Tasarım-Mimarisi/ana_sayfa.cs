@@ -97,6 +97,7 @@ namespace Tasarım_Mimarisi
         {
             rapor rapor_al = new rapor();
             rapor_al.isim = isim;
+            rapor_al.TC= dataGridView1.CurrentRow.Cells["TC"].Value.ToString();
             rapor_al.Show();
             this.Hide();
         }
