@@ -17,32 +17,38 @@ namespace Tasarım_Mimarisi
     public partial class rapor : Form
     {
         public string isim;
-        public string TC;
+        public string TC,Diyet;
+        bool raporyazdirildi = true;
         public rapor()
         {
             InitializeComponent();
         }
         OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
-        DataTable tablo = new DataTable();
-        private readonly string _json= $"C:\\Users\\omerk\\Desktop\\Tasarım-Mimarisi\\Rapor.json";
-        
-        
-        private void geri_btn_Click(object sender, EventArgs e)
-        {
-            
-        }
+        DataTable tablok = new DataTable();
+        DataTable tablod = new DataTable();
+
+        private readonly string _json= $"C:\\Users\\Berk\\Desktop\\tasarım\\healthy_diet\\Rapor.json";
+
+       
         private void listele()
         {
-            
-            tablo.Clear();
+            tablok.Clear();
             baglanti.Open();
-            OleDbDataAdapter liste = new OleDbDataAdapter("select *from Hastalar where TC ='"+TC+"'",baglanti);
-            liste.Fill(tablo);
-            dataGridView1.DataSource = tablo;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.White;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Green;
+            OleDbDataAdapter listek = new OleDbDataAdapter("select *from Hastalar where TC ='"+TC+"'",baglanti);
+            listek.Fill(tablok);
+            KullaniciVerileri.DataSource = tablok;
+            KullaniciVerileri.DefaultCellStyle.SelectionBackColor = Color.White;
+            KullaniciVerileri.DefaultCellStyle.SelectionForeColor = Color.Green;
+           
+
+            tablod.Clear();
+            OleDbDataAdapter listed = new OleDbDataAdapter("select *from Diyetler where DiyetAdi ='" + Diyet + "'", baglanti);
+            listed.Fill(tablod);
+            Diyetverileri.DataSource = tablod;
+            Diyetverileri.DefaultCellStyle.SelectionBackColor = Color.White;
+            Diyetverileri.DefaultCellStyle.SelectionForeColor = Color.Red;
             baglanti.Close();
-            
+
 
 
         }
@@ -61,7 +67,30 @@ namespace Tasarım_Mimarisi
                 hasta1.Diyet = oku["Diyet"].ToString();
 
             }
+
             baglanti.Close();
+
+            
+        }
+        private void diyet_ekle(diyet diyet)
+        {
+            baglanti.Open();
+            OleDbCommand diyetsorgu = new OleDbCommand("select *from Diyetler where DiyetAdi = '" + Diyet + "'", baglanti);
+        OleDbDataReader diyetoku = diyetsorgu.ExecuteReader();
+            while (diyetoku.Read())
+            {
+                diyet.Diyetadi = diyetoku["DiyetAdi"].ToString();
+                diyet.Pazartesi = diyetoku["Pazartesi"].ToString();
+                diyet.Sali = diyetoku["Salı"].ToString();
+                diyet.Carsamba = diyetoku["Çarşamba"].ToString();
+                diyet.Persembe = diyetoku["Perşembe"].ToString();
+                diyet.Cuma = diyetoku["Cuma"].ToString();
+                diyet.Cumartesi = diyetoku["Cumartesi"].ToString();
+                diyet.Pazar = diyetoku["Pazar"].ToString();
+            }
+
+              baglanti.Close();
+
 
         }
         private void anasycks_Click(object sender, EventArgs e)
@@ -86,22 +115,63 @@ namespace Tasarım_Mimarisi
         {
             
             hasta secili_hasta = new hasta();
+            diyet secili_hastad = new diyet();
             Sınfa_ekle(secili_hasta);
-            try
+            diyet_ekle(secili_hastad);
+
+            
+           
+            if (sira.SelectedItem == null)
             {
-                
-                var hasta_rapor = JsonConvert.SerializeObject(secili_hasta,Formatting.Indented);
-                using (var yazdir = new StreamWriter(_json))
+                MessageBox.Show("Lütfen Yazdırma Sırasını Seçiniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                raporyazdirildi = false;
+            }
+
+            else if (sira.SelectedIndex == 1)
+            {
+                try
                 {
-                    yazdir.Write(hasta_rapor);
-                    
+                    var hasta_rapor = JsonConvert.SerializeObject(secili_hasta, Formatting.Indented);
+                    var hasta_rapord = JsonConvert.SerializeObject(secili_hastad, Formatting.Indented);
+                    using (var yazdir = new StreamWriter(_json))
+                    {
+                        yazdir.Write("Diyet Bilgileri \n" + hasta_rapord + "\nHasta Bilgileri \n" + hasta_rapor);
+                        raporyazdirildi = true;
+                        MessageBox.Show("Rapor Başarılı Bir Şekilde Yazdırıldı", "Tamam", MessageBoxButtons.OK);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+
+
                 }
             }
-            catch (Exception ex)
-            {
+            else
 
-                
+            {
+                try
+                {
+                    var hasta_rapor = JsonConvert.SerializeObject(secili_hasta, Formatting.Indented);
+                    var hasta_rapord = JsonConvert.SerializeObject(secili_hastad, Formatting.Indented);
+                    using (var yazdir = new StreamWriter(_json))
+                    {
+                        yazdir.Write("Hasta Bilgileri \n" + hasta_rapor + "\n Diyet Bilgileri \n" + hasta_rapord);
+                        raporyazdirildi = true;
+                        MessageBox.Show("Rapor Başarılı Bir Şekilde Yazdırıldı", "Tamam", MessageBoxButtons.OK);
+                    }
+
+                    
+                }
+                catch (Exception ex)
+                {
+
+
+                }
+
             }
+
+            
         }
         private void rapor_btn_Click(object sender, EventArgs e)
         {

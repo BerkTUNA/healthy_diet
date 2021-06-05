@@ -14,5 +14,18 @@ namespace Tasarım_Mimarisi
         public string Telefon;
         public string Teshis;
         public string Diyet;
+
+    }
+
+    class diyet
+    {
+        public string Diyetadi;
+        public string Pazartesi;
+        public string Sali;
+        public string Carsamba;
+        public string Persembe;
+        public string Cuma;
+        public string Cumartesi;
+        public string Pazar;
     }
 }

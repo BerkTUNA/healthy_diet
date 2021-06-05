@@ -48,6 +48,7 @@ namespace Tasarım_Mimarisi
             this.dataGridView4.GridColor = System.Drawing.Color.LightGray;
             this.dataGridView4.Location = new System.Drawing.Point(49, 81);
             this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersVisible = false;
             this.dataGridView4.Size = new System.Drawing.Size(467, 168);
             this.dataGridView4.TabIndex = 0;
             // 

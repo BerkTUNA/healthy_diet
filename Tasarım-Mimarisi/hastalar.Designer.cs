@@ -46,6 +46,7 @@ namespace Tasarım_Mimarisi
             this.dataGridView3.GridColor = System.Drawing.Color.LightGray;
             this.dataGridView3.Location = new System.Drawing.Point(49, 81);
             this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersVisible = false;
             this.dataGridView3.Size = new System.Drawing.Size(467, 192);
             this.dataGridView3.TabIndex = 0;
             // 

@@ -79,3 +79,6 @@ C:\Users\Berk\Desktop\tasarım\healthy_diet\Tasarım-Mimarisi\obj\Debug\Tasarım
 C:\Users\omerk\Desktop\Tasarım-Mimarisi\healthy_diet\Tasarım-Mimarisi\bin\Debug\Newtonsoft.Json.dll
 C:\Users\omerk\Desktop\Tasarım-Mimarisi\healthy_diet\Tasarım-Mimarisi\bin\Debug\Newtonsoft.Json.xml
 C:\Users\omerk\Desktop\Tasarım-Mimarisi\healthy_diet\Tasarım-Mimarisi\obj\Debug\Tasarım-Mimarisi.csproj.CopyComplete
+C:\Users\Berk\Desktop\tasarım\healthy_diet\Tasarım-Mimarisi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Berk\Desktop\tasarım\healthy_diet\Tasarım-Mimarisi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Berk\Desktop\tasarım\healthy_diet\Tasarım-Mimarisi\obj\Debug\Tasarım-Mimarisi.csproj.CopyComplete
