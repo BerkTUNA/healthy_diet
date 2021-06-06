@@ -1,4 +1,3 @@
-
 # Yazılım Mimarisi ve Tasarımı
 # *Healthy Diet Projesi *
 
@@ -34,4 +33,42 @@ Diyetisyenin kaydettiği hastalıklar bu tabloya kaydediliyor
 Adminin eklediği Diyetisyenler bu tabloya kaydediliyor
 
 # *GİRİŞ*
+![giriş1](https://user-images.githubusercontent.com/70074665/120935047-9dbd6400-c709-11eb-97e9-0572c17257f6.png)
+Projenin başlangıç kısmı burası.Burada veri tabanındaki Diyetisyenler bölümünde Yetki sütunundaki veri eğer Diyetisyense diyetisyenin anasayfasına, Adminse admin paneline yönlendiriyor.
+
+![giriş2](https://user-images.githubusercontent.com/70074665/120935112-da895b00-c709-11eb-9dfa-3b5726780b39.png) eğer hiç bir veri girilmezse
+
+![giriş3](https://user-images.githubusercontent.com/70074665/120935122-e543f000-c709-11eb-8402-0dcfc3d4c5ec.png) eğer yanlış veri girilirse
+
+hataları yollanıyor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
