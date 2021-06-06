@@ -85,10 +85,15 @@ Combobox'ın boş olup olmadığı ayrı şekilde kontrol edilebiliyor eğer se�
 ![ana1](https://user-images.githubusercontent.com/70074665/120935394-39030900-c70b-11eb-9e28-ee6ea65feaf1.png)
 Diyetisyen girişi yapıldıysa Anasayfa formu açılıyor burda tüm hastalar listeleniyor ve Diyetisyenin ismi ve Avatarı geliyor
 ![ana2](https://user-images.githubusercontent.com/70074665/120935424-57690480-c70b-11eb-8e4f-1ad4be8826c5.png)
+
 Listele Filtrenebiliyor
+
 ![ana3](https://user-images.githubusercontent.com/70074665/120935440-62bc3000-c70b-11eb-82f2-bdf18cb2db0b.png)
+
 Eğer Diyetisyenin cinsiyeti Erkekse
+
 ![ana4](https://user-images.githubusercontent.com/70074665/120935446-6fd91f00-c70b-11eb-91ab-c16cdf760a38.png)
+
 Eğer Diyetisyenin cinsiyeti Kadınsa Avatarları çıkıyor
 
 
