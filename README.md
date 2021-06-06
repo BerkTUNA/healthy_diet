@@ -100,6 +100,7 @@ Eğer Diyetisyenin cinsiyeti Kadınsa Avatarları çıkıyor
 # *Yeni Hastalık*
 
 ![Hastalık1](https://user-images.githubusercontent.com/70074665/120935545-fa218300-c70b-11eb-97b5-d9b20ea1f163.png)
+
 Diyetisyen burdan yeni bir hastalık ekleyebiliyor
 
 ![hastalık2](https://user-images.githubusercontent.com/70074665/120935553-03aaeb00-c70c-11eb-97d2-a2e60db70eb7.png)
@@ -110,8 +111,23 @@ Aynı isimde veri tabanında başka bir hastalık varsa
 
 Veri girilmezse hataları yollanıyor
 
+# *Yeni Hasta Ekle*
 
+![hasta1](https://user-images.githubusercontent.com/70074665/120935597-394fd400-c70c-11eb-8758-d22cbf95b380.png)
 
+Diyetisyen burdan yeni bir Hasta ekleyebiliyor
+
+![hasta4](https://user-images.githubusercontent.com/70074665/120935694-9c416b00-c70c-11eb-806e-3b3db8048d5c.png)
+
+Eklenen yeni Hastalıklar combobox'a geliyor
+
+![hasta2](https://user-images.githubusercontent.com/70074665/120935658-7caa4280-c70c-11eb-8ea0-a936781aaa31.png)
+
+Veri girilmezse
+
+![hasta3](https://user-images.githubusercontent.com/70074665/120935674-892e9b00-c70c-11eb-9510-104680b34c16.png)
+
+Veri tabanında aynı TC ile başka bir hasta varsa hataları yollanıyor
 
 
 
