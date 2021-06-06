@@ -18,3 +18,5 @@ Healthy Diet projesi kısaca bir hasta ve diyetisyen projesidir. Diyetisyen hizm
 
 # Projemizin Ekran Görüntüleri ve Açıklamaları
 
+*Veri tabanı*
+![veritabanıdiyetler](https://user-images.githubusercontent.com/70074665/120934835-9cd80280-c708-11eb-9e08-f25601bc8a4b.png)
