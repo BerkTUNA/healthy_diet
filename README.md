@@ -83,6 +83,7 @@ Combobox'ın boş olup olmadığı ayrı şekilde kontrol edilebiliyor eğer se�
 # *Ana Sayfa*
 
 ![ana1](https://user-images.githubusercontent.com/70074665/120935394-39030900-c70b-11eb-9e28-ee6ea65feaf1.png)
+
 Diyetisyen girişi yapıldıysa Anasayfa formu açılıyor burda tüm hastalar listeleniyor ve Diyetisyenin ismi ve Avatarı geliyor
 ![ana2](https://user-images.githubusercontent.com/70074665/120935424-57690480-c70b-11eb-8e4f-1ad4be8826c5.png)
 
