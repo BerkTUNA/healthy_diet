@@ -148,7 +148,7 @@ Veri girilmezse hataları yollanıyor
 
 ![diyet](https://user-images.githubusercontent.com/70074665/120936053-859c1380-c70e-11eb-9aff-ed01cf13a7db.png)
 
-Fare ile Ana Ekrandaki tablodan seçilen Hastanın adı soyadı ve TC'si değiştirilemez şekilde textboxlara geliyor
+Fare ile Ana Ekrandaki tablodan seçilen Hastanın Adı,Soyadı ve TC'si değiştirilemez şekilde textboxlara geliyor
 
 ![diyet3](https://user-images.githubusercontent.com/70074665/120936074-a19fb500-c70e-11eb-85be-86b02755efc0.png)
 
@@ -160,6 +160,26 @@ Seçim yapmazsak hata yollanıyor
 
 
 # *Rapor Al*
+
+![rapor1](https://user-images.githubusercontent.com/70074665/120936128-e75c7d80-c70e-11eb-8ca2-d43f6e18fb8c.png)
+
+Fare ile Ana Ekrandaki tablodan seçilen Hastanın tüm kişisel bilgileri ve diyet bilgileri ayrı tablolarda değiştirilemez şekilde listeleniyor
+
+![rapor3](https://user-images.githubusercontent.com/70074665/120936149-0529e280-c70f-11eb-9c87-9a0540fc34a9.png)
+
+Burdan raporun yazdırılma sırasını seçiyoruz
+
+![rapor2](https://user-images.githubusercontent.com/70074665/120936157-0ce98700-c70f-11eb-9226-7d130e926c2c.png)
+
+Yazdırılma sırası seçilmezse hata yollanıyor
+
+![rapor4](https://user-images.githubusercontent.com/70074665/120936168-1a067600-c70f-11eb-958b-11c59fc93a45.png)
+
+Dosya olarak raporumuz bu şekilde oluşuyor
+
+![rapor5](https://user-images.githubusercontent.com/70074665/120936179-268ace80-c70f-11eb-915e-b2e569753617.png)
+
+Sıra değiştirildiğinde de veri güncelleniyor
 
 
 
