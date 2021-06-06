@@ -39,18 +39,41 @@ Projenin başlangıç kısmı burası.Burada veri tabanındaki Diyetisyenler bö
 
 ![giriş2](https://user-images.githubusercontent.com/70074665/120935112-da895b00-c709-11eb-9dfa-3b5726780b39.png) eğer hiç bir veri girilmezse
 
-![giriş3](https://user-images.githubusercontent.com/70074665/120935122-e543f000-c709-11eb-8402-0dcfc3d4c5ec.png) eğer yanlış veri girilirse
+![giriş3](https://user-images.githubusercontent.com/70074665/120935122-e543f000-c709-11eb-8402-0dcfc3d4c5ec.png) eğer yanlış veri girilirse hataları yollanıyor
 
-hataları yollanıyor
+# *ADMİN PANELİ*
 
+![admin1](https://user-images.githubusercontent.com/70074665/120935160-19b7ac00-c70a-11eb-97e9-3fb386ac38df.png)
 
+Eğer admin giriş yaparsa admin paneli açılıyor geri tuşuna basarsa Giriş formuna "X" tuşuna basarsa program kapanıyor.
 
+![admin3](https://user-images.githubusercontent.com/70074665/120935223-626f6500-c70a-11eb-8cc8-197851b95871.png)
 
+Admin tüm Hastaların tüm bilgilerine erişim sağlayabiliyor
 
+![admin2](https://user-images.githubusercontent.com/70074665/120935198-48358700-c70a-11eb-9037-f74ba7dddb72.png)
 
+Admin tüm Diyetisyenlerin tüm bilgilerine erişim sağlayabiliyor
 
+![admin4](https://user-images.githubusercontent.com/70074665/120935214-5be0ed80-c70a-11eb-9b3a-cfab81c0e0dd.png)
 
+Admin yeni bir Diyetisyen kaydı oluşturabiliyor
 
+![admin8](https://user-images.githubusercontent.com/70074665/120935287-afebd200-c70a-11eb-880a-95d0a4406100.png)
+
+Aynı kullanıcı adında başka bir Diyetisyen varsa
+
+![admin7](https://user-images.githubusercontent.com/70074665/120935301-bed28480-c70a-11eb-8aec-7c823cfe9b38.png)
+
+Boş bırakılırsa
+
+![admin5](https://user-images.githubusercontent.com/70074665/120935315-ce51cd80-c70a-11eb-9f65-6995a21d176b.png)
+
+Combobox'ın boş olup olmadığı ayrı şekilde kontrol edilebiliyor eğer seçilmezse
+
+![admin6](https://user-images.githubusercontent.com/70074665/120935324-df024380-c70a-11eb-823f-0a9e4b0e2b1a.png)
+
+Şifre ve Şifre Tekrar uyuşmuyorsa hataları yollanıyor
 
 
 
