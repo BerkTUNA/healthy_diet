@@ -97,8 +97,18 @@ Eğer Diyetisyenin cinsiyeti Erkekse
 
 Eğer Diyetisyenin cinsiyeti Kadınsa Avatarları çıkıyor
 
+# *Yeni Hastalık*
 
+![Hastalık1](https://user-images.githubusercontent.com/70074665/120935545-fa218300-c70b-11eb-97b5-d9b20ea1f163.png)
+Diyetisyen burdan yeni bir hastalık ekleyebiliyor
 
+![hastalık2](https://user-images.githubusercontent.com/70074665/120935553-03aaeb00-c70c-11eb-97d2-a2e60db70eb7.png)
+
+Aynı isimde veri tabanında başka bir hastalık varsa 
+
+![hastalık3](https://user-images.githubusercontent.com/70074665/120935568-145b6100-c70c-11eb-9139-f3b4191bce4e.png)
+
+Veri girilmezse hataları yollanıyor
 
 
 
