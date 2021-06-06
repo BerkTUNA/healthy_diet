@@ -23,9 +23,11 @@ Healthy Diet projesi kısaca bir hasta ve diyetisyen projesidir. Diyetisyen hizm
 Diyetisyenin eklediği diyetler bu tabloya kaydediliyor
 
 ![veritabanıhastalar](https://user-images.githubusercontent.com/70074665/120934848-acefe200-c708-11eb-836c-41c11bc62598.png)
+
 Diyetisyenin kaydettiği hastalar Diyet kısmı en başta "YOK" olarak bu tabloya kaydediliyor
 
 ![veritabanıhastalıklar](https://user-images.githubusercontent.com/70074665/120934850-b0836900-c708-11eb-89d4-8fc14d38d34c.png)
+
 Diyetisyenin kaydettiği hastalıklar bu tabloya kaydediliyor
 
 ![veritabanıdiyetisyenler](https://user-images.githubusercontent.com/70074665/120934854-b2e5c300-c708-11eb-9357-ee80a5dc2eb3.png)
