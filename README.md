@@ -37,9 +37,11 @@ Adminin eklediği Diyetisyenler bu tabloya kaydediliyor
 
 Projenin başlangıç kısmı burası.Burada veri tabanındaki Diyetisyenler bölümünde Yetki sütunundaki veri eğer Diyetisyense diyetisyenin anasayfasına, Adminse admin paneline yönlendiriyor.
 
-![giriş2](https://user-images.githubusercontent.com/70074665/120935112-da895b00-c709-11eb-9dfa-3b5726780b39.png) eğer hiç bir veri girilmezse
+![giriş2](https://user-images.githubusercontent.com/70074665/120935112-da895b00-c709-11eb-9dfa-3b5726780b39.png) 
+eğer hiç bir veri girilmezse
 
-![giriş3](https://user-images.githubusercontent.com/70074665/120935122-e543f000-c709-11eb-8402-0dcfc3d4c5ec.png) eğer yanlış veri girilirse hataları yollanıyor
+![giriş3](https://user-images.githubusercontent.com/70074665/120935122-e543f000-c709-11eb-8402-0dcfc3d4c5ec.png) 
+eğer yanlış veri girilirse hataları yollanıyor
 
 # *ADMİN PANELİ*
 
