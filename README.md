@@ -130,12 +130,36 @@ Veri girilmezse
 Veri tabanında aynı TC ile başka bir hasta varsa hataları yollanıyor
 
 
+# *Yeni Diyet Planı*
+
+![diyetekle](https://user-images.githubusercontent.com/70074665/120935771-01955c00-c70d-11eb-8522-468df7be26d5.png)
+
+Burdan Diyetisyen Yeni bir Diyet Planı oluşturabiliyor
+
+![diyetekle3](https://user-images.githubusercontent.com/70074665/120935780-1114a500-c70d-11eb-9103-67ee494ccd60.png)
+
+Aynı isimde veri tabanında bir diyet varsa 
+
+![diyetekle2](https://user-images.githubusercontent.com/70074665/120935799-2984bf80-c70d-11eb-8dd6-a31b2612440e.png)
+
+Veri girilmezse hataları yollanıyor
+
+# *Diyet Ata*
+
+![diyet](https://user-images.githubusercontent.com/70074665/120936053-859c1380-c70e-11eb-9aff-ed01cf13a7db.png)
+
+Fare ile Ana Ekrandaki tablodan seçilen Hastanın adı soyadı ve TC'si değiştirilemez şekilde textboxlara geliyor
+
+![diyet3](https://user-images.githubusercontent.com/70074665/120936074-a19fb500-c70e-11eb-85be-86b02755efc0.png)
+
+Buradan Diyet planı seçiyoruz her yeni diyet eklendikçe combobox'a geliyor
+
+![diyet2](https://user-images.githubusercontent.com/70074665/120936085-b67c4880-c70e-11eb-8f02-37982adea0bc.png)
+
+Seçim yapmazsak hata yollanıyor
 
 
-
-
-
-
+# *Rapor Al*
 
 
 
