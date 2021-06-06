@@ -14,3 +14,5 @@ Healthy Diet projesi kısaca bir hasta ve diyetisyen projesidir. Diyetisyen hizm
 
 # Projemizin Scrum Table'ı
 
+# Projemizin Ekran Görüntüleri ve Açıklamaları
+
