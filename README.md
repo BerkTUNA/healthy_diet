@@ -10,6 +10,7 @@ Berk Tuna - 182805007 - II.Ogretim
 [Healthy Diet Projemiz]( https://youtu.be/UtFbBCJHJ1A)
 # *Proje Açıklaması ve Amacı*
 Healthy Diet projesi kısaca bir hasta ve diyetisyen projesidir. Diyetisyen hizmeti alan hasta istediği diyetisyene gidip kendini kaydettirebilir, muayene olup hastalığı ve kendine özel hazırlanan diyet yöntemini rapor şeklinde alabilir.
+# Projemizin UML Diagramı
 
 # Projemizin Scrum Table'ı
 
