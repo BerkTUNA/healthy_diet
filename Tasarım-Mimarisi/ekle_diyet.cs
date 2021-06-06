@@ -19,7 +19,7 @@ namespace Tasarım_Mimarisi
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
+        OleDbConnection baglanti = Giris.baglanti_kur();
         private void ekle_btn_Click(object sender, EventArgs e)
         {
             diyet_yok = true;

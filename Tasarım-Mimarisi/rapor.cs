@@ -23,7 +23,7 @@ namespace Tasarım_Mimarisi
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
+        OleDbConnection baglanti = Giris.baglanti_kur();
         DataTable tablok = new DataTable();
         DataTable tablod = new DataTable();
 

@@ -19,7 +19,18 @@ namespace Tasarım_Mimarisi
         {
             InitializeComponent();
         }
-        OleDbConnection baglanti = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
+        
+        private static OleDbConnection connect = new OleDbConnection();
+
+        public static OleDbConnection baglanti_kur()
+        {
+            if (connect != new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb"))
+            {
+                connect = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=odev1.mdb");
+            }
+            return connect;
+        }
+        OleDbConnection baglanti = baglanti_kur();
         private void giris_btn_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -117,7 +128,7 @@ namespace Tasarım_Mimarisi
 
         private void Giris_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
